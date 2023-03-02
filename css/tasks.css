@@ -1,0 +1,17 @@
+.tasks {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 780px 180px;
+    grid-template-rows: repeat(4, 80px);
+    grid-row-gap: 2px; 
+    padding-top: 10px;
+    
+}
+
+.tasks__list {
+    background-color: white;
+    padding-left: 40px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}

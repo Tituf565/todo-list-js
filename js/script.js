@@ -77,8 +77,10 @@ console.log("Cześć!");
         render();
 
         const form = document.querySelector(".js-form");
+        const button = document.querySelector(".js-button");
 
         form.addEventListener("submit", onFormSubmit);
+        button.addEventListener("click", onFormSubmit);
     };
 
     init();
