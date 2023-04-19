@@ -1,7 +1,7 @@
 console.log("Cześć!");
 {
     const tasks = [];
-    
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -14,7 +14,7 @@ console.log("Cześć!");
         tasks.splice(taskIndex, 1);
         render();
     }
-    
+
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
@@ -39,7 +39,7 @@ console.log("Cześć!");
 
         });
     }
-   
+
     const render = () => {
         let htmlString = "";
 
@@ -58,7 +58,7 @@ console.log("Cześć!");
 
         bindEvents();
     };
-    
+
 
     const onFormSubmit = (event) => {
         event.preventDefault();
