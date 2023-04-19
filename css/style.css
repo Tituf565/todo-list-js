@@ -5,19 +5,3 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
-
-
-
-.input__newTask {
-border: 1px solid rgba(128, 128, 128, 0.377);
-   width: 700px;
-    height: 40px;
-}
-
-.button {
-    width: 150px;
-    height: 40px;
-    background-color: teal;
-    color: white;
-    border: none;
-}
