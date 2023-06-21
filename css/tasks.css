@@ -1,17 +1,54 @@
 .tasks {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 780px 180px;
-    grid-template-rows: repeat(4, 80px);
-    grid-row-gap: 2px; 
-    padding-top: 10px;
-    
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.tasks__list {
-    background-color: white;
-    padding-left: 40px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+.tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
+
+.tasks__button {
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    padding: 0px;
+
+}
+
+.tasks__button--done {
+    background-color: green;
+    font-size: 25px;
+}
+
+.tasks__button--done:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.tasks__button--done:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.tasks__button--remove {
+    background-color: red;
+    font-size: 25px;
+}
+
+.tasks__button--remove:hover {
+    background-color: hsl(0, 100%, 55%)
+}
+
+.tasks__button--remove:active {
+    background-color: hsl(0, 100%, 60%)
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
 }

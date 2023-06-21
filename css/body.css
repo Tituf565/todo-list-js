@@ -2,4 +2,6 @@
     background-color: #ddd;
     max-width: 2000px;
     font-family: 'Lato', sans-serif;
-    }
+    word-break: break-word;
+}
+
